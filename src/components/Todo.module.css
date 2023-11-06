@@ -1,0 +1,133 @@
+/* LIST */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.created {
+  color: var(--blue);
+}
+
+.done {
+  color: var(--purple);
+}
+
+.header strong {
+  font-size: 0.75rem;
+}
+
+.header strong span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+}
+
+.todo {
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  background: var(--gray-500);
+  border-radius: 8px;
+}
+
+.item + .item {
+  margin-top: 2.5rem;
+}
+
+.item button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.item p {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  line-height: 1.4;
+  margin: 0 0.75rem;
+}
+
+.item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--blue);
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: border-color .1s;
+  cursor: pointer;
+}
+
+.item span:hover {
+  border-color: var(--blue-dark);
+}
+
+.checked span {
+  border: 0;
+}
+
+.item span img {
+  height: 24px;
+  opacity: 0;
+  transition: opacity .1s;
+}
+
+.checked span img {
+  height: 28px;
+  opacity: 1;
+}
+
+.checked p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 4rem 1.5rem;
+}
+
+.empty img {
+  height: 56px;
+  margin-bottom: 1rem;
+}
+
+.empty p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--gray-300);
+  line-height: 1.4;
+}
